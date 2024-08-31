@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VesperDale Nigeria</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="logo">
+                    <img src="assets/svg/logo.svg" alt="VesperDale Nigeria">
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+              </nav>
+        </div>
+    </header> 
+    
+    <section class="contact-form">
+        <div class="container">
+            <h2>What can we do for you?</h2>
+            <p>We are here to help. Send us a message and we'll be in touch.</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name*" required>
+                    <input type="email" placeholder="Email*" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Reason for Contacting*" required>
+                    <input type="tel" placeholder="Phone">
+                </div>
+                <textarea placeholder="Message" rows="5"></textarea>
+                <p>* indicates a required field</p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-grid">
+            <div class="office-info">
+                <h3>HEAD OFFICE:</h3>
+                <p>17A Colorado Close, Maitama, Abuja</p>
+            </div>
+            <div class="office-info">
+                <h3>LAGOS OFFICE:</h3>
+                <p>Oakspecs House, Nt13 Avera Vista Estate Olokonla B/Stop, Lekki-Epe Expressway, Lagos</p>
+            </div>
+            <div class="office-info">
+                <h3>Contact</h3>
+                <p>Phone: +2348070581212, +2347025000095</p>
+                <p>Email: vesperdalenigerialtd@gmail.com</p>
+            </div>
+        </div>
+        <p style="background-color:#007bff; padding: 16px; color: #fff;">&copy;VesperDale Nigeria</p>
+    </footer>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script>
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
